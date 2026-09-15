@@ -101,6 +101,17 @@ h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; te
 .hero h1{font-size:clamp(2rem,5.4vw,3.4rem); line-height:1.02; font-weight:800; letter-spacing:-.022em; margin-bottom:16px}
 .hero .lede{font-size:clamp(1.02rem,2vw,1.2rem); color:var(--ink-soft); max-width:56ch; margin:0 0 26px}
 
+.videolink{
+  display:inline-flex; align-items:center; gap:10px; margin-top:16px;
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:.95rem;
+  color:var(--verde); text-decoration:none;
+  border:1px solid var(--verde); border-radius:999px; padding:10px 18px;
+  transition:background .18s ease;
+}
+.videolink:hover{background:var(--verde-soft)}
+.videolink:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.videolink .play{font-size:.78em; line-height:1}
+
 /* price plate */
 .plate{
   display:flex; flex-wrap:wrap; align-items:flex-end; gap:8px 28px;
@@ -228,6 +239,10 @@ dialog.lb form{position:relative}
       <img src="img/01-living-comedor.jpg" alt="Living-comedor" fetchpriority="high">
     </figure>
 
+    <a class="videolink" href="https://www.youtube.com/watch?v=RELX-epTYzs" target="_blank" rel="noopener">
+      <span class="play" aria-hidden="true">&#9654;</span><span data-i="hero.video">Ver el video del depto &middot; 1:30</span>
+    </a>
+
     <div class="plate">
       <div class="col">
         <span class="unit" data-i="p.rent">Alquiler mensual</span>
@@ -244,7 +259,7 @@ dialog.lb form{position:relative}
     </div>
 
     <dl class="ficha">
-      <div><dt data-i="f.sup">Superficie</dt><dd>60 m²</dd></div>
+      <div><dt data-i="f.sup">Superficie</dt><dd data-i="f.supv">60 m²</dd></div>
       <div><dt data-i="f.amb">Ambientes</dt><dd data-i="f.ambv">3</dd></div>
       <div><dt data-i="f.dor">Dormitorio</dt><dd data-i="f.dorv">2 o 1 + oficina</dd></div>
       <div><dt data-i="f.ban">Baños</dt><dd data-i="f.banv">1 + toilette</dd></div>
@@ -305,10 +320,10 @@ dialog.lb form{position:relative}
     <h2 class="sec-title" data-i="l.t">Belgrano, a pie</h2>
     <p class="sec-note" data-i="l.n"></p>
     <ul class="walk">
-      <li><span data-i="l.1">Subte D, estación Juramento</span><span class="d">600 m · 7 min</span></li>
-      <li><span data-i="l.2">Av. Cabildo y Juramento</span><span class="d">≈ 700 m · 8 min</span></li>
-      <li><span data-i="l.3">Barrio Chino</span><span class="d">≈ 1,1 km · 14 min</span></li>
-      <li><span data-i="l.4">Barrancas de Belgrano</span><span class="d">≈ 1,2 km · 15 min</span></li>
+      <li><span data-i="l.1">Subte D, estación Juramento</span><span class="d" data-i="d.1">600 m · 7 min</span></li>
+      <li><span data-i="l.2">Av. Cabildo y Juramento</span><span class="d" data-i="d.2">≈ 700 m · 8 min</span></li>
+      <li><span data-i="l.3">Barrio Chino</span><span class="d" data-i="d.3">≈ 1,1 km · 14 min</span></li>
+      <li><span data-i="l.4">Barrancas de Belgrano</span><span class="d" data-i="d.4">≈ 1,2 km · 15 min</span></li>
     </ul>
   </section>
 
@@ -364,14 +379,14 @@ dialog.lb form{position:relative}
 const T = {
   es:{},
   en:{
-    "eyebrow":"For rent · Available 28.09.2026",
+    "eyebrow":"For rent · Available 28.09.2026","hero.video":"Watch the video tour · 1:30",
     "h1":"Furnished in Belgrano, ready to move in.",
     "lede":"A 60 m² three-room apartment on the 4th floor: a bedroom with wall-to-wall mirrored closets, a second room with a door that works as an office or a second bedroom, and an open living-dining area with a full kitchen. The building has a pool and a shared grill terrace. Seven minutes on foot to the D line.",
     "p.rent":"Monthly rent","p.exp":"Building fees","p.tot":"Approx. total","p.totv":"≈ USD 1,650 / month",
-    "f.sup":"Floor area","f.amb":"Rooms","f.ambv":"3","f.dor":"Bedroom","f.dorv":"2, or 1 + office",
+    "f.sup":"Floor area","f.supv":"60 m²","d.1":"600 m · 7 min","d.2":"≈ 700 m · 8 min","d.3":"≈ 1.1 km · 14 min","d.4":"≈ 1.2 km · 15 min","f.amb":"Rooms","f.ambv":"3","f.dor":"Bedroom","f.dorv":"2, or 1 + office",
     "f.ban":"Bathrooms","f.banv":"1 + toilet","f.piso":"Floor","f.pisov":"4th","f.sub":"Subway D","f.subv":"7 min",
     "g.t":"The apartment",
-    "g.n":"Photographed as it is lived in today — furniture and appliances all stay. Tap any photo to enlarge.",
+    "g.n":"Real photos of the apartment — the furniture and appliances stay. Tap any photo to enlarge.",
     "c.kitchen":"Kitchen with breakfast bar","c.bed":"Bedroom","c.closet":"Mirrored closets","c.office":"Second room / office",
     "c.kitchen2":"Fully equipped kitchen","c.bath":"Bathroom with tub","c.toilette":"Guest toilet","c.tv":"TV and A/C",
     "c.fridge":"Fridge and oven","c.laundry":"Service balcony","c.hall":"Hall to the bedroom","c.entry":"Entrance",
@@ -391,14 +406,14 @@ const T = {
     "foot":"Available from 28.09.2026"
   },
   ru:{
-    "eyebrow":"Сдаётся · свободна с 28.09.2026",
+    "eyebrow":"Сдаётся · свободна с 28.09.2026","hero.video":"Смотреть видео квартиры · 1:30",
     "h1":"Бельграно. Меблированная — заезжай с чемоданом.",
-    "lede":"60 м², 4-й этаж, три помещения: спальня со шкафом-купе во всю стену, вторая комната с дверью — кабинет или спальня, и кухня-гостиная с барной стойкой. В доме бассейн и общая терраса с паррильей. До сабте — семь минут пешком.",
+    "lede":"60 м², 4-й этаж, три помещения: спальня со шкафом-купе во всю стену, вторая комната с дверью — кабинет или спальня, и кухня-гостиная с барной стойкой. В доме бассейн и общая терраса с паррильей. До метро — семь минут пешком.",
     "p.rent":"Аренда в месяц","p.exp":"Expensas","p.tot":"Итого примерно","p.totv":"≈ USD 1 650 / мес",
-    "f.sup":"Площадь","f.amb":"Помещений","f.ambv":"3","f.dor":"Спальня","f.dorv":"2 или 1 + кабинет",
-    "f.ban":"Санузлы","f.banv":"1 + гостевой","f.piso":"Этаж","f.pisov":"4-й","f.sub":"Сабте D","f.subv":"7 мин",
+    "f.sup":"Площадь","f.supv":"60 м²","d.1":"600 м · 7 мин","d.2":"≈ 700 м · 8 мин","d.3":"≈ 1,1 км · 14 мин","d.4":"≈ 1,2 км · 15 мин","f.amb":"Помещений","f.ambv":"3","f.dor":"Спальня","f.dorv":"2 или 1 + кабинет",
+    "f.ban":"Санузлы","f.banv":"1 + гостевой","f.piso":"Этаж","f.pisov":"4-й","f.sub":"Метро D","f.subv":"7 мин",
     "g.t":"Квартира",
-    "g.n":"Снято как есть сегодня — вся мебель и техника остаются. Нажми на фото, чтобы увеличить.",
+    "g.n":"Фотографии реальные, без стилизации — вся мебель и техника остаются в квартире. Нажми на фото, чтобы увеличить.",
     "c.kitchen":"Кухня с барной стойкой","c.bed":"Спальня","c.closet":"Шкаф-купе с зеркалами","c.office":"Вторая комната / кабинет",
     "c.kitchen2":"Кухня с техникой","c.bath":"Ванная","c.toilette":"Гостевой туалет","c.tv":"Телевизор и кондиционер",
     "c.fridge":"Холодильник и духовка","c.laundry":"Балкон-прачечная","c.hall":"Проход в спальню","c.entry":"Вход",
@@ -409,7 +424,7 @@ const T = {
     "a.6":"Вторая комната с дверью — кабинет или вторая спальня, как нужно","a.7":"Стиральная машина на закрытом балконе","a.8":"Смарт-ТВ",
     "a.9":"Бассейн","a.10":"Общая терраса с паррильей","a.11":"С животными можно","a.12":"Окна на улицу, 4-й этаж",
     "l.t":"Бельграно пешком","l.n":"Тихая жилая улица, при этом всё, ради чего едут в Бельграно, — в пешей доступности.",
-    "l.1":"Сабте, линия D, станция Juramento","l.2":"Авениды Cabildo и Juramento","l.3":"Китайский квартал","l.4":"Парк Barrancas de Belgrano",
+    "l.1":"Метро (subte), линия D, станция Juramento","l.2":"Авениды Cabildo и Juramento","l.3":"Китайский квартал","l.4":"Парк Barrancas de Belgrano",
     "t.t":"Условия","t.k1":"Долгосрок","t.v1":"12 месяцев","t.p1":"USD 1400 + expensas. Стандартный договор.",
     "t.k2":"Меблированная, среднесрок","t.v2":"от 3 до 11 месяцев","t.p2":"Ставка зависит от срока.",
     "t.k3":"Без посредников","t.v3":"Напрямую от владельца","t.p3":"Комиссии агентству нет.",
@@ -422,7 +437,7 @@ const T = {
 /* испанский — исходная разметка, снимаем её один раз */
 document.querySelectorAll("[data-i]").forEach(el => { T.es[el.dataset.i] = el.textContent; });
 T.es["lede"] = "Tres ambientes de 60 m² en un 4° piso: dormitorio con placard con espejos de pared a pared, segundo ambiente con puerta (oficina o dormitorio), y living-comedor integrado con cocina completa y desayunador. El edificio tiene pileta y terraza comunal con parrilla. A siete minutos a pie del Subte D.";
-T.es["g.n"] = "Fotografiado tal como se vive hoy — los muebles y electrodomésticos quedan. Tocá cualquier foto para ampliarla.";
+T.es["g.n"] = "Fotos reales del departamento: los muebles y electrodomésticos quedan. Tocá cualquier foto para ampliarla.";
 T.es["a.n"] = "Llegás con la valija. Nada de esta lista hay que comprarlo.";
 T.es["l.n"] = "Una cuadra residencial y tranquila, con todo lo que hace a Belgrano a pocos minutos caminando.";
 
