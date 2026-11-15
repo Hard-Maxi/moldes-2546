@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Departamento 3 ambientes amoblado en alquiler en Belgrano, Buenos Aires. 60 m², pileta, parrilla, balcón. USD 1.400 + expensas. Dueño directo.">
+<meta property="og:title" content="Alquiler amoblado en Belgrano — Moldes 2546">
+<meta property="og:description" content="60 m², 3 ambientes, recién renovado. Pileta y terraza con parrilla, a 7 minutos del Subte D. USD 1.400/mes + expensas.">
+<meta property="og:image" content="img/01-living-comedor.jpg">
+<meta property="og:type" content="website">
+<style>
+:root{color-scheme:light dark}
+body{margin:0;font:14px system-ui,sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<title>Moldes 2546</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+<style>
+:root{
+  --paper:#F1F2ED;
+  --surface:#FFFFFF;
+  --ink:#141B15;
+  --ink-soft:#4C5A4E;
+  --ink-faint:#8B968C;
+  --line:#D8DBD1;
+  --verde:#1E6B46;          /* Línea D */
+  --verde-soft:#E4EDE6;
+  --roble:#A98F63;          /* дуб кухни */
+  --shadow:0 1px 2px rgba(20,27,21,.06), 0 12px 32px -18px rgba(20,27,21,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E120E;
+    --surface:#171D18;
+    --ink:#E7EBE4;
+    --ink-soft:#A6B1A6;
+    --ink-faint:#717D72;
+    --line:#2A332B;
+    --verde:#5CB483;
+    --verde-soft:#1B2A20;
+    --roble:#C0A778;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E120E; --surface:#171D18; --ink:#E7EBE4; --ink-soft:#A6B1A6;
+  --ink-faint:#717D72; --line:#2A332B; --verde:#5CB483; --verde-soft:#1B2A20;
+  --roble:#C0A778;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -18px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:17px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; text-wrap:balance; margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+
+.wrap{max-width:1080px; margin:0 auto; padding-inline:20px}
+
+/* ---------- language bar ---------- */
+.langbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:40;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.langbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:10px}
+.brand{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-soft);
+}
+.brand b{color:var(--verde); font-weight:500}
+a.brand{text-decoration:none; transition:color .15s ease}
+a.brand:hover{color:var(--ink); text-decoration:underline; text-underline-offset:4px; text-decoration-thickness:1px}
+a.brand:focus-visible{outline:2px solid var(--verde); outline-offset:3px; border-radius:2px}
+.langs{display:flex; gap:4px}
+.langs button{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.1em;
+  padding:6px 10px; border:1px solid transparent; border-radius:999px;
+  background:transparent; color:var(--ink-faint); cursor:pointer;
+}
+.langs button:hover{color:var(--ink)}
+.langs button[aria-pressed="true"]{background:var(--verde-soft); color:var(--verde); border-color:var(--verde)}
+.langs button:focus-visible{outline:2px solid var(--verde); outline-offset:2px}
+
+/* ---------- hero ---------- */
+.hero{padding-block:28px 0}
+.hero-figure{position:relative; border-radius:3px; overflow:hidden; box-shadow:var(--shadow)}
+.hero-figure img{width:100%; aspect-ratio:4/3; object-fit:cover}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--verde); margin-bottom:14px;
+}
+.hero h1{font-size:clamp(2rem,5.4vw,3.4rem); line-height:1.02; font-weight:800; letter-spacing:-.022em; margin-bottom:16px}
+.hero .lede{font-size:clamp(1.02rem,2vw,1.2rem); color:var(--ink-soft); max-width:56ch; margin:0 0 26px}
+
+.videolink{
+  display:inline-flex; align-items:center; gap:10px; margin-top:16px;
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:.95rem;
+  color:var(--verde); text-decoration:none;
+  border:1px solid var(--verde); border-radius:999px; padding:10px 18px;
+  transition:background .18s ease;
+}
+.videolink:hover{background:var(--verde-soft)}
+.videolink:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.videolink .play{font-size:.78em; line-height:1}
+
+/* price plate */
+.plate{
+  display:flex; flex-wrap:wrap; align-items:flex-end; gap:8px 28px;
+  padding:18px 20px; margin:26px 0 0;
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--verde);
+  border-radius:2px;
+}
+.plate .amount{font-family:"Bricolage Grotesque",sans-serif; font-size:2.1rem; font-weight:700; line-height:1; letter-spacing:-.02em}
+.plate .unit{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-faint); letter-spacing:.08em; text-transform:uppercase}
+.plate .col{display:flex; flex-direction:column; gap:6px}
+.plate .exp{font-family:"IBM Plex Mono",monospace; font-size:1.05rem; font-weight:500}
+.plate .total{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-faint)}
+
+/* ---------- ficha ---------- */
+.ficha{
+  margin-top:30px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+}
+.ficha div{padding:16px 14px; border-right:1px solid var(--line); text-align:center}
+.ficha div:last-child{border-right:0}
+.ficha dt{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:5px}
+.ficha dd{margin:0; font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:1.05rem; font-variant-numeric:tabular-nums}
+
+/* ---------- sections ---------- */
+section{padding-block:52px}
+.sec-title{
+  font-size:clamp(1.35rem,3vw,1.9rem); font-weight:700; letter-spacing:-.018em; margin-bottom:8px;
+}
+.sec-note{color:var(--ink-soft); max-width:60ch; margin:0 0 28px}
+
+/* gallery */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px}
+.shot{
+  border:0; padding:0; margin:0; background:none; cursor:zoom-in;
+  border-radius:2px; overflow:hidden; position:relative; box-shadow:var(--shadow);
+}
+.shot img{width:100%; aspect-ratio:3/4; object-fit:cover; transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.shot:hover img{transform:scale(1.03)}
+.shot:focus-visible{outline:2px solid var(--verde); outline-offset:3px}
+.shot figcaption{
+  position:absolute; left:0; right:0; bottom:0; padding:22px 12px 9px;
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.06em; color:#fff;
+  background:linear-gradient(to top, rgba(10,14,10,.78), transparent);
+  text-align:left;
+}
+.shot.wide{grid-column:span 2}
+.shot.wide img{aspect-ratio:3/2}
+@media (max-width:520px){ .shot.wide{grid-column:span 1} .shot.wide img{aspect-ratio:3/4} }
+
+/* amenities */
+.cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:34px}
+.cols h3{font-size:.82rem; font-family:"IBM Plex Mono",monospace; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--verde); margin-bottom:14px}
+.cols ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+.cols li{padding:9px 0; border-bottom:1px solid var(--line); display:flex; gap:12px; align-items:baseline}
+.cols li::before{content:""; flex:none; width:5px; height:5px; border-radius:50%; background:var(--roble); transform:translateY(-3px)}
+
+/* location */
+.loc{display:grid; grid-template-columns:1fr; gap:26px}
+.walk{display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none}
+.walk li{
+  display:flex; justify-content:space-between; gap:20px; align-items:baseline;
+  padding:11px 0; border-bottom:1px solid var(--line);
+}
+.walk .d{font-family:"IBM Plex Mono",monospace; font-size:.9rem; color:var(--ink-faint); white-space:nowrap}
+
+/* terms */
+.terms{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px}
+.term{background:var(--surface); border:1px solid var(--line); border-radius:2px; padding:20px}
+.term .k{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:9px}
+.term .v{font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:1.2rem; margin-bottom:5px}
+.term p{margin:0; font-size:.95rem; color:var(--ink-soft)}
+
+/* cta */
+.cta{background:var(--verde-soft); border-radius:3px; padding:38px 28px; text-align:center; margin-bottom:56px}
+.cta h2{font-size:clamp(1.4rem,3.4vw,2.1rem); font-weight:700; letter-spacing:-.02em; margin-bottom:10px}
+.cta p{color:var(--ink-soft); margin:0 auto 24px; max-width:46ch}
+.btns{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
+.btn{
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:1rem;
+  text-decoration:none; padding:13px 24px; border-radius:999px; border:1px solid var(--verde);
+  background:var(--verde); color:#fff; transition:transform .18s ease, opacity .18s ease;
+}
+.btn:hover{transform:translateY(-1px); opacity:.92}
+.btn.ghost{background:transparent; color:var(--verde)}
+.btn:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+
+footer{border-top:1px solid var(--line); padding-block:24px 44px; color:var(--ink-faint); font-size:.85rem}
+footer .wrap{display:flex; flex-wrap:wrap; gap:10px 24px; justify-content:space-between}
+footer a.addr{color:inherit; text-decoration:none; transition:color .15s ease}
+footer a.addr:hover{color:var(--verde); text-decoration:underline; text-underline-offset:4px; text-decoration-thickness:1px}
+footer a.addr:focus-visible{outline:2px solid var(--verde); outline-offset:3px; border-radius:2px}
+
+/* lightbox */
+dialog.lb{
+  border:0; padding:0; background:transparent; max-width:min(96vw,900px); width:100%;
+}
+dialog.lb::backdrop{background:rgba(8,12,9,.9)}
+dialog.lb img{width:100%; height:auto; max-height:86vh; object-fit:contain; border-radius:2px}
+dialog.lb .close{
+  position:absolute; top:-2px; right:0; transform:translateY(-115%);
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.1em;
+  background:none; border:1px solid rgba(255,255,255,.4); color:#fff;
+  border-radius:999px; padding:6px 14px; cursor:pointer;
+}
+dialog.lb form{position:relative}
+
+@media (prefers-reduced-motion:reduce){ *{animation:none!important; transition:none!important} }
+</style>
+
+<div class="langbar">
+  <div class="wrap">
+    <a class="brand" href="https://www.google.com/maps/search/?api=1&amp;query=Moldes+2546%2C+Belgrano%2C+Ciudad+Aut%C3%B3noma+de+Buenos+Aires%2C+Argentina" target="_blank" rel="noopener" aria-label="Moldes 2546, Belgrano — Google Maps">Moldes 2546 · <b>Belgrano</b></a>
+    <div class="langs" role="group" aria-label="Idioma">
+      <button id="lang-es" type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button id="lang-en" type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button id="lang-ru" type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <header class="hero wrap">
+    <p class="eyebrow" data-i="eyebrow">Recién renovado · Disponible 17.11.2026</p>
+    <h1 data-i="h1">Amoblado en Belgrano, listo para entrar.</h1>
+    <p class="lede" data-i="lede"></p>
+
+    <figure class="hero-figure" style="margin:0">
+      <img src="img/01-living-comedor.jpg" alt="Living-comedor" fetchpriority="high">
+    </figure>
+
+    <a class="videolink" href="https://www.youtube.com/watch?v=RELX-epTYzs" target="_blank" rel="noopener">
+      <span class="play" aria-hidden="true">&#9654;</span><span data-i="hero.video">Ver el video del depto &middot; 1:30</span>
+    </a>
+
+    <div class="plate">
+      <div class="col">
+        <span class="unit" data-i="p.rent">Alquiler mensual</span>
+        <span class="amount">USD 1.400</span>
+      </div>
+      <div class="col">
+        <span class="unit" data-i="p.exp">Expensas</span>
+        <span class="exp">$ 380.000</span>
+      </div>
+      <div class="col">
+        <span class="unit" data-i="p.tot">Total aproximado</span>
+        <span class="total" data-i="p.totv">≈ USD 1.650 / mes</span>
+      </div>
+    </div>
+
+    <dl class="ficha">
+      <div><dt data-i="f.sup">Superficie</dt><dd data-i="f.supv">60 m²</dd></div>
+      <div><dt data-i="f.amb">Ambientes</dt><dd data-i="f.ambv">3</dd></div>
+      <div><dt data-i="f.dor">Dormitorio</dt><dd data-i="f.dorv">2 o 1 + oficina</dd></div>
+      <div><dt data-i="f.ban">Baños</dt><dd data-i="f.banv">1 + toilette</dd></div>
+      <div><dt data-i="f.piso">Piso</dt><dd data-i="f.pisov">4°</dd></div>
+      <div><dt data-i="f.sub">Subte D</dt><dd data-i="f.subv">7 min</dd></div>
+    </dl>
+  </header>
+
+  <section class="wrap">
+    <h2 class="sec-title" data-i="m.t">El segundo ambiente, a tu medida</h2>
+    <p class="sec-note" data-i="m.n">Hoy está vacío, y esa es la ventaja: decinos qué necesitás y el propietario compra los muebles. Lo acordamos antes de firmar.</p>
+    <div class="terms">
+      <div class="term">
+        <div class="k" data-i="m.k1">Si trabajás desde casa</div>
+        <div class="v" data-i="m.v1">Oficina</div>
+        <p data-i="m.p1">Escritorio, silla y estantes: un home office con puerta.</p>
+      </div>
+      <div class="term">
+        <div class="k" data-i="m.k2">Si necesitás otro cuarto</div>
+        <div class="v" data-i="m.v2">Dormitorio</div>
+        <p data-i="m.p2">Sofá cama o cama nuevos: para un hijo, las visitas o un segundo inquilino.</p>
+      </div>
+      <div class="term">
+        <div class="k" data-i="m.k3">Y en el living</div>
+        <div class="v" data-i="m.v3">Mesa y sillas a elección</div>
+        <p data-i="m.p3">Más grande, más chica o sacamos lo que sobra. También se conversa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="sec-title" data-i="g.t">El departamento</h2>
+    <p class="sec-note" data-i="g.n"></p>
+    <div class="grid">
+      <button class="shot wide" type="button" data-src="img/02-cocina-desayunador.jpg"><img src="img/02-cocina-desayunador.jpg" alt=""><figcaption data-i="c.kitchen">Cocina con desayunador</figcaption></button>
+      <button class="shot" type="button" data-src="img/04-dormitorio.jpg"><img src="img/04-dormitorio.jpg" alt=""><figcaption data-i="c.bed">Dormitorio</figcaption></button>
+      <button class="shot" type="button" data-src="img/05-dormitorio-placard.jpg"><img src="img/05-dormitorio-placard.jpg" alt=""><figcaption data-i="c.closet">Placard con espejos</figcaption></button>
+      <button class="shot" type="button" data-src="img/07-oficina.jpg"><img src="img/07-oficina.jpg" alt=""><figcaption data-i="c.office">2° ambiente (hoy sin muebles)</figcaption></button>
+      <button class="shot" type="button" data-src="img/03-cocina.jpg"><img src="img/03-cocina.jpg" alt=""><figcaption data-i="c.kitchen2">Cocina equipada</figcaption></button>
+      <button class="shot" type="button" data-src="img/08-bano-completo.jpg"><img src="img/08-bano-completo.jpg" alt=""><figcaption data-i="c.bath">Baño con bañera</figcaption></button>
+      <button class="shot" type="button" data-src="img/10-toilette.jpg"><img src="img/10-toilette.jpg" alt=""><figcaption data-i="c.toilette">Toilette</figcaption></button>
+      <button class="shot" type="button" data-src="img/06-dormitorio-tv-aire.jpg"><img src="img/06-dormitorio-tv-aire.jpg" alt=""><figcaption data-i="c.tv">TV y aire acondicionado</figcaption></button>
+      <button class="shot" type="button" data-src="img/11-cocina-heladera.jpg"><img src="img/11-cocina-heladera.jpg" alt=""><figcaption data-i="c.fridge">Heladera y horno</figcaption></button>
+      <button class="shot" type="button" data-src="img/12-lavadero-balcon.jpg"><img src="img/12-lavadero-balcon.jpg" alt=""><figcaption data-i="c.laundry">Balcón-lavadero</figcaption></button>
+      <button class="shot" type="button" data-src="img/09-bano-acceso.jpg"><img src="img/09-bano-acceso.jpg" alt=""><figcaption data-i="c.hall">Paso al dormitorio</figcaption></button>
+      <button class="shot" type="button" data-src="img/14-entrada.jpg"><img src="img/14-entrada.jpg" alt=""><figcaption data-i="c.entry">Entrada</figcaption></button>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="sec-title" data-i="a.t">Qué incluye</h2>
+    <p class="sec-note" data-i="a.n"></p>
+    <div class="cols">
+      <div>
+        <h3 data-i="a.h1">En el departamento</h3>
+        <ul>
+          <li data-i="a.0">Recién renovado: pisos nuevos y pintura en todos los ambientes</li>
+          <li data-i="a.1">Amoblado y equipado; el 2° ambiente se amuebla a tu medida</li>
+          <li data-i="a.2">Losa radiante bajo los pisos nuevos</li>
+          <li data-i="a.3">Aire acondicionado en dormitorio y living</li>
+          <li data-i="a.4">Cocina completa: heladera, horno, anafe, microondas, campana</li>
+          <li data-i="a.5">Placard con espejos de pared a pared</li>
+          <li data-i="a.6">2° ambiente con puerta: oficina o segundo dormitorio, a convenir</li>
+          <li data-i="a.7">Lavarropas en el balcón-lavadero cerrado</li>
+          <li data-i="a.8">Smart TV</li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i="a.h2">En el edificio</h3>
+        <ul>
+          <li data-i="a.9">Pileta</li>
+          <li data-i="a.10">Terraza comunal con parrilla</li>
+          <li data-i="a.11">Apto mascotas</li>
+          <li data-i="a.12">Frente, 4° piso</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="sec-title" data-i="l.t">Belgrano, a pie</h2>
+    <p class="sec-note" data-i="l.n"></p>
+    <ul class="walk">
+      <li><span data-i="l.1">Subte D, estación Juramento</span><span class="d" data-i="d.1">600 m · 7 min</span></li>
+      <li><span data-i="l.2">Av. Cabildo y Juramento</span><span class="d" data-i="d.2">≈ 700 m · 8 min</span></li>
+      <li><span data-i="l.3">Barrio Chino</span><span class="d" data-i="d.3">≈ 1,1 km · 14 min</span></li>
+      <li><span data-i="l.4">Barrancas de Belgrano</span><span class="d" data-i="d.4">≈ 1,2 km · 15 min</span></li>
+    </ul>
+  </section>
+
+  <section class="wrap">
+    <h2 class="sec-title" data-i="t.t">Condiciones</h2>
+    <div class="terms">
+      <div class="term">
+        <div class="k" data-i="t.k1">Largo plazo</div>
+        <div class="v" data-i="t.v1">12 meses</div>
+        <p data-i="t.p1">USD 1.400 + expensas. Contrato estándar.</p>
+      </div>
+      <div class="term">
+        <div class="k" data-i="t.k2">Temporario amoblado</div>
+        <div class="v" data-i="t.v2">3 a 11 meses</div>
+        <p data-i="t.p2">Valor a confirmar según la duración.</p>
+      </div>
+      <div class="term">
+        <div class="k" data-i="t.k3">Sin intermediarios</div>
+        <div class="v" data-i="t.v3">Dueño directo</div>
+        <p data-i="t.p3">Sin comisión inmobiliaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2 data-i="cta.t">¿Coordinamos una visita?</h2>
+      <p data-i="cta.p">Respondemos el mismo día. Visitas de lunes a sábado.</p>
+      <div class="btns">
+        <a class="btn" id="wa" href="https://wa.me/5491126963676" target="_blank" rel="noopener" data-i="cta.b1">Escribir por WhatsApp</a>
+        <a class="btn ghost" href="https://t.me/Max_ReallyEstate" target="_blank" rel="noopener" data-i="cta.b3">Telegram</a>
+        <a class="btn ghost" href="https://www.youtube.com/watch?v=RELX-epTYzs" target="_blank" rel="noopener" data-i="cta.b2">Ver el video del depto</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Moldes+2546%2C+Belgrano%2C+Ciudad+Aut%C3%B3noma+de+Buenos+Aires%2C+Argentina" target="_blank" rel="noopener" aria-label="Moldes 2546, Belgrano — Google Maps">Moldes 2546, Belgrano, CABA (C1428)</a>
+    <span class="mono" data-i="foot">Disponible desde el 17.11.2026</span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb">
+  <form method="dialog">
+    <button class="close" value="x">CERRAR ✕</button>
+    <img id="lb-img" src="" alt="">
+  </form>
+</dialog>
+
+<script>
+const T = {
+  es:{},
+  en:{
+    "eyebrow":"Just renovated · Available 17.11.2026","hero.video":"Watch the video tour · 1:30",
+    "h1":"Furnished in Belgrano, ready to move in.",
+    "lede":"A freshly renovated 60 m² apartment on the 4th floor: new tile over heated floors, fresh paint throughout. A bedroom with wall-to-wall mirrored closets, an open living-dining area with a full kitchen, and a second room we furnish to your needs — office or bedroom. The building has a pool and a shared grill terrace. Seven minutes on foot to the D line.",
+    "p.rent":"Monthly rent","p.exp":"Building fees","p.tot":"Approx. total","p.totv":"≈ USD 1,650 / month",
+    "f.sup":"Floor area","f.supv":"60 m²","d.1":"600 m · 7 min","d.2":"≈ 700 m · 8 min","d.3":"≈ 1.1 km · 14 min","d.4":"≈ 1.2 km · 15 min","f.amb":"Rooms","f.ambv":"3","f.dor":"Bedroom","f.dorv":"2, or 1 + office",
+    "f.ban":"Bathrooms","f.banv":"1 + toilet","f.piso":"Floor","f.pisov":"4th","f.sub":"Subway D","f.subv":"7 min",
+    "m.t":"The second room, furnished your way","m.n":"It's empty right now, and that's the advantage: tell us what you need and the owner buys the furniture. We agree on it before you sign.","m.k1":"If you work from home","m.v1":"Office","m.p1":"Desk, chair and shelving — a workspace with a door.","m.k2":"If you need another bedroom","m.v2":"Bedroom","m.p2":"A new sofa bed or bed — for a child, guests or a second tenant.","m.k3":"And in the living room","m.v3":"Table and chairs, your call","m.p3":"Bigger, smaller, or we take out what you don't need. Also negotiable.",
+    "g.t":"The apartment",
+    "g.n":"Photos taken before the renovation: the floors have since been replaced and everything repainted. New photos coming soon. Tap any photo to enlarge.",
+    "c.kitchen":"Kitchen with breakfast bar","c.bed":"Bedroom","c.closet":"Mirrored closets","c.office":"Second room (now unfurnished)",
+    "c.kitchen2":"Fully equipped kitchen","c.bath":"Bathroom with tub","c.toilette":"Guest toilet","c.tv":"TV and A/C",
+    "c.fridge":"Fridge and oven","c.laundry":"Service balcony","c.hall":"Hall to the bedroom","c.entry":"Entrance",
+    "a.t":"What's included","a.n":"You arrive with a suitcase. Nothing on this list needs buying.",
+    "a.h1":"In the apartment","a.h2":"In the building",
+    "a.0":"Freshly renovated: new floors and fresh paint throughout","a.1":"Furnished and equipped; the second room is furnished to your needs","a.2":"Heated floors under the new tile","a.3":"A/C in the bedroom and living area",
+    "a.4":"Full kitchen: fridge, oven, hob, microwave, extractor hood","a.5":"Wall-to-wall mirrored closets",
+    "a.6":"Second room with a door — use it as an office or as a second bedroom","a.7":"Washing machine on the enclosed service balcony","a.8":"Smart TV",
+    "a.9":"Swimming pool","a.10":"Shared terrace with a parrilla","a.11":"Pet-friendly","a.12":"Street-facing, 4th floor",
+    "l.t":"Belgrano, on foot","l.n":"A quiet residential block, with everything Belgrano is known for a short walk away.",
+    "l.1":"Subway line D, Juramento station","l.2":"Cabildo & Juramento avenues","l.3":"Chinatown","l.4":"Barrancas de Belgrano park",
+    "t.t":"Terms","t.k1":"Long term","t.v1":"12 months","t.p1":"USD 1,400 + building fees. Standard contract.",
+    "t.k2":"Furnished, mid-term","t.v2":"3 to 11 months","t.p2":"Rate depends on the length of stay.",
+    "t.k3":"No agency","t.v3":"Direct from the owner","t.p3":"No agency commission.",
+    "cta.t":"Want to see it?","cta.p":"We answer the same day. Viewings Monday to Saturday.",
+    "cta.b1":"Message on WhatsApp","cta.b2":"Watch the video tour","cta.b3":"Telegram",
+    "foot":"Available from 17.11.2026"
+  },
+  ru:{
+    "eyebrow":"После ремонта · свободна с 17.11.2026","hero.video":"Смотреть видео квартиры · 1:30",
+    "h1":"Бельграно. Меблированная — заезжай с чемоданом.",
+    "lede":"60 м², 4-й этаж, только что после ремонта: новая плитка на тёплых полах, свежая покраска. Спальня со шкафом-купе во всю стену, кухня-гостиная с барной стойкой и вторая комната, которую обставим под вас — кабинет или спальня. В доме бассейн и терраса с паррильей. До метро — семь минут пешком.",
+    "p.rent":"Аренда в месяц","p.exp":"Expensas","p.tot":"Итого примерно","p.totv":"≈ USD 1 650 / мес",
+    "f.sup":"Площадь","f.supv":"60 м²","d.1":"600 м · 7 мин","d.2":"≈ 700 м · 8 мин","d.3":"≈ 1,1 км · 14 мин","d.4":"≈ 1,2 км · 15 мин","f.amb":"Помещений","f.ambv":"3","f.dor":"Спальня","f.dorv":"2 или 1 + кабинет",
+    "f.ban":"Санузлы","f.banv":"1 + гостевой","f.piso":"Этаж","f.pisov":"4-й","f.sub":"Метро D","f.subv":"7 мин",
+    "m.t":"Вторую комнату обставим под вас","m.n":"Сейчас она пустая, и это плюс: скажите, что вам нужно, — мебель купит собственник. Договариваемся до подписания.","m.k1":"Если работаете из дома","m.v1":"Кабинет","m.p1":"Стол, кресло, стеллаж — рабочее место с дверью.","m.k2":"Если нужна ещё одна спальня","m.v2":"Спальня","m.p2":"Новый диван или кровать — для ребёнка, гостей или второго жильца.","m.k3":"И в гостиной","m.v3":"Стол и стулья — на выбор","m.p3":"Побольше, поменьше или уберём лишнее. Тоже обсуждается.",
+    "g.t":"Квартира",
+    "g.n":"Фото сняты до ремонта: с тех пор заменили полы и перекрасили стены. Новые фото — скоро. Нажми на фото, чтобы увеличить.",
+    "c.kitchen":"Кухня с барной стойкой","c.bed":"Спальня","c.closet":"Шкаф-купе с зеркалами","c.office":"Вторая комната (сейчас без мебели)",
+    "c.kitchen2":"Кухня с техникой","c.bath":"Ванная","c.toilette":"Гостевой туалет","c.tv":"Телевизор и кондиционер",
+    "c.fridge":"Холодильник и духовка","c.laundry":"Балкон-прачечная","c.hall":"Проход в спальню","c.entry":"Вход",
+    "a.t":"Что входит","a.n":"Приезжаешь с чемоданом. Ничего из этого списка докупать не надо.",
+    "a.h1":"В квартире","a.h2":"В доме",
+    "a.0":"Свежий ремонт: новые полы и покраска во всех комнатах","a.1":"Меблирована и укомплектована; вторую комнату обставим под вас","a.2":"Тёплые полы под новой плиткой","a.3":"Кондиционеры в спальне и гостиной",
+    "a.4":"Кухня: холодильник, духовка, варочная панель, микроволновка, вытяжка","a.5":"Шкаф-купе с зеркалами во всю стену",
+    "a.6":"Вторая комната с дверью — кабинет или вторая спальня, как нужно","a.7":"Стиральная машина на закрытом балконе","a.8":"Смарт-ТВ",
+    "a.9":"Бассейн","a.10":"Общая терраса с паррильей","a.11":"С животными можно","a.12":"Окна на улицу, 4-й этаж",
+    "l.t":"Бельграно пешком","l.n":"Тихая жилая улица, при этом всё, ради чего едут в Бельграно, — в пешей доступности.",
+    "l.1":"Метро (subte), линия D, станция Juramento","l.2":"Авениды Cabildo и Juramento","l.3":"Китайский квартал","l.4":"Парк Barrancas de Belgrano",
+    "t.t":"Условия","t.k1":"Долгосрок","t.v1":"12 месяцев","t.p1":"USD 1400 + expensas. Стандартный договор.",
+    "t.k2":"Меблированная, среднесрок","t.v2":"от 3 до 11 месяцев","t.p2":"Ставка зависит от срока.",
+    "t.k3":"Без посредников","t.v3":"Напрямую от владельца","t.p3":"Комиссии агентству нет.",
+    "cta.t":"Посмотрим квартиру?","cta.p":"Отвечаем в тот же день. Показы с понедельника по субботу.",
+    "cta.b1":"Написать в WhatsApp","cta.b2":"Смотреть видео квартиры","cta.b3":"Telegram",
+    "foot":"Свободна с 17.11.2026"
+  }
+};
+
+/* испанский — исходная разметка, снимаем её один раз */
+document.querySelectorAll("[data-i]").forEach(el => { T.es[el.dataset.i] = el.textContent; });
+T.es["lede"] = "60 m² en un 4° piso, recién renovado: pisos nuevos con losa radiante y pintura a estrenar. Dormitorio con placard con espejos de pared a pared, living-comedor integrado con cocina completa y desayunador, y un segundo ambiente que amoblamos a tu medida: oficina o dormitorio. El edificio tiene pileta y terraza comunal con parrilla. A siete minutos a pie del Subte D.";
+T.es["g.n"] = "Fotos tomadas antes de la renovación: desde entonces se cambiaron los pisos y se pintó todo. Fotos nuevas, en breve. Tocá cualquier foto para ampliarla.";
+T.es["a.n"] = "Llegás con la valija. Nada de esta lista hay que comprarlo.";
+T.es["l.n"] = "Una cuadra residencial y tranquila, con todo lo que hace a Belgrano a pocos minutos caminando.";
+
+const WA_TEXT = {
+  es: "Hola! Vi el depto de Moldes 2546 en Belgrano. ¿Sigue disponible?",
+  en: "Hi! I saw the apartment at Moldes 2546 in Belgrano. Is it still available?",
+  ru: "Здравствуйте! Пишу по квартире на Moldes 2546 в Бельграно. Она ещё свободна?"
+};
+
+function setLang(code){
+  const dict = T[code] || T.es;
+  const wa = document.getElementById("wa");
+  if (wa) wa.href = "https://wa.me/5491126963676?text=" + encodeURIComponent(WA_TEXT[code] || WA_TEXT.es);
+  document.querySelectorAll("[data-i]").forEach(el => {
+    const v = dict[el.dataset.i];
+    if (v) el.textContent = v;
+  });
+  document.querySelectorAll(".langs button").forEach(b =>
+    b.setAttribute("aria-pressed", String(b.dataset.lang === code)));
+  document.documentElement.lang = code;
+  try { localStorage.setItem("moldes-lang", code); } catch (e) {}
+}
+
+document.querySelectorAll(".langs button").forEach(b =>
+  b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+setLang((() => {
+  try { const s = localStorage.getItem("moldes-lang"); if (s && T[s]) return s; } catch (e) {}
+  const n = (navigator.language || "es").slice(0,2).toLowerCase();
+  return T[n] ? n : "es";
+})());
+
+/* лайтбокс */
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img");
+document.querySelectorAll(".shot").forEach(s => s.addEventListener("click", () => {
+  lbImg.src = s.dataset.src;
+  lbImg.alt = s.querySelector("figcaption").textContent;
+  lb.showModal();
+}));
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+</script>
+
+</body>
+</html>
